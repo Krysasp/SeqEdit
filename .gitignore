@@ -1,0 +1,29 @@
+# Compiled classes
+classes/
+*.class
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+
+# OS files
+.DS_Store
+Thumbs.db
+*~
+
+# Temporary files
+*.tmp
+*.temp
+*.fasta.tmp
+*.fasta.tmp.*
+
+# Log files
+*.log
+
+# Build artifacts
+build/
+dist/
