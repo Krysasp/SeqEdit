@@ -2,8 +2,6 @@
 
 A Java Swing-based biological sequence editor for Linux, ported from the classic BioEdit software by Tom Hall. Features a Borland C++ Builder-style UI with multi-sequence support, phylogenetic tree construction, and BLAST integration.
 
-![SeqEdit Screenshot](docs/screenshot.png) *(to be added)*
-
 ## Features
 
 ### Sequence Editing
@@ -52,7 +50,7 @@ A Java Swing-based biological sequence editor for Linux, ported from the classic
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/SeqEdit.git
+git clone https://github.com/Krysasp/SeqEdit.git
 cd SeqEdit
 
 # Build the project
@@ -82,48 +80,6 @@ java -cp "classes:lib/*" SeqEdit
 5. **Analyze**: Use Analysis menu for composition, translation, dot plots, etc.
 6. **Save**: File → Save or Save As to export in FASTA format
 
-### Keyboard Shortcuts
-
-- **← →** - Navigate between sequences
-- **Ctrl+C** - Copy
-- **Ctrl+V** - Paste
-- **Ctrl+X** - Cut
-- **Ctrl+A** - Select All
-
-## Project Structure
-
-```
-SeqEdit/
-├── src/                    # Java source files
-│   ├── SeqEdit.java           # Main application window
-│   ├── CodonTableDialog.java # Codon table viewer
-│   ├── CompositionDialog.java # Sequence composition analysis
-│   ├── SixFrameDialog.java   # Six-frame translation
-│   ├── DotPlotDialog.java    # Dot plot analysis
-│   ├── RestrictionDialog.java # Restriction mapping
-│   ├── TreeDialog.java       # Phylogenetic tree viewer
-│   ├── ClustalDialog.java   # ClustalO alignment
-│   └── BlastDialog.java      # BLAST search interface
-├── bin/                   # External tools (local copies)
-│   ├── clustalo             # Clustal Omega aligner
-│   ├── fasttree             # FastTree for ML trees
-│   ├── blastn               # BLAST nucleotide search
-│   ├── blastp               # BLAST protein search
-│   ├── blastx               # BLAST translated search
-│   └── makeblastdb          # BLAST database builder
-├── lib/                   # Java libraries
-│   ├── biojava-core-7.1.0.jar
-│   └── biojava-genome-7.1.0.jar
-├── classes/               # Compiled Java classes
-├── examples/              # Example sequence files
-│   └── test_sequences.fasta
-├── Makefile              # Build script
-├── run.sh                # Run script
-└── README.md            # This file
-```
-
-## Configuration
-
 ### Tool Paths
 
 SeqEdit automatically searches for external tools in this order:
@@ -152,24 +108,15 @@ make run
 make install-tools
 ```
 
-## Known Issues & Limitations
-
-- Manual alignment editor: Not yet implemented
-- Plasmid drawing: Coming soon
-- BLAST may require internet access for remote searches
-- Very large sequences (>1MB) may require increased Java heap size
-
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Please feel free to contribute submit a Pull Request.
 
 ## License
-
-This software is provided under the same terms as the original BioEdit - free for use by any interested parties.
+MIT licensed
 
 ## Acknowledgments
 
-- Original BioEdit by Tom Hall
 - ClustalO team for multiple sequence alignment
 - FastTree (Morgan Price) for phylogenetic tree construction
 - BioJava project for sequence analysis libraries
